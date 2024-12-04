@@ -18,6 +18,10 @@ register("packetReceived", () => {
   ticks++;
 }).setFilteredClass(S32PacketConfirmTransaction);
 
+register("worldLoad", () => {
+  ticks = 400;
+});
+
 register("chat", () => {
   if(ticks > 400) {
     numStacks = 0;
